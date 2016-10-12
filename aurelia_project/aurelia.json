@@ -4,7 +4,7 @@
   "platform": {
     "id": "web",
     "displayName": "Web",
-    "output": "scripts",
+    "output": "output",
     "index": "index.html"
   },
   "transpiler": {
@@ -55,7 +55,7 @@
       {
         "id": "web",
         "displayName": "Web",
-        "output": "scripts",
+        "output": "output",
         "index": "index.html"
       }
     ],
@@ -70,7 +70,7 @@
             ".html",
             ".css"
           ],
-          "stub": true
+          "stub": false
         }
       ]
     },
@@ -89,8 +89,7 @@
       {
         "name": "vendor-bundle.js",
         "prepend": [
-          "node_modules/bluebird/js/browser/bluebird.core.js",
-          "scripts/require.js"
+          "node_modules/requirejs/require.js"
         ],
         "dependencies": [
           "aurelia-binding",
@@ -116,7 +115,7 @@
           "aurelia-templating-binding",
           {
             "name": "text",
-            "path": "../scripts/text"
+            "path": "../node_modules/requirejs-text/text"
           },
           {
             "name": "aurelia-templating-resources",
