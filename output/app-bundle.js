@@ -1,9 +1,15 @@
-define('app',["require", "exports"], function (require, exports) {
+define('app',["require", "exports", 'electron'], function (require, exports, electron_1) {
     "use strict";
     var App = (function () {
         function App() {
             this.message = 'Hello World!';
         }
+        App.prototype.sayHello = function () {
+            electron_1.remote.dialog.showMessageBox({
+                message: "The file has been saved! :-)",
+                buttons: ["OK"]
+            });
+        };
         return App;
     }());
     exports.App = App;
@@ -22,8 +28,7 @@ define('main',["require", "exports", './environment'], function (require, export
     "use strict";
     function configure(aurelia) {
         aurelia.use
-            .standardConfiguration()
-            .feature('resources');
+            .standardConfiguration();
         if (environment_1.default.debug) {
             aurelia.use.developmentLogging();
         }
@@ -35,13 +40,13 @@ define('main',["require", "exports", './environment'], function (require, export
     exports.configure = configure;
 });
 
-define('resources/index',["require", "exports"], function (require, exports) {
+define('components/index',["require", "exports"], function (require, exports) {
     "use strict";
     function configure(config) {
     }
     exports.configure = configure;
 });
 
-define('text!app.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"app.css\"></require>\n  <h1>${message}</h1>\n</template>\n"; });
-define('text!app.css', ['module'], function(module) { module.exports = "body {\n  background-color: red; }\n"; });
+define('text!app.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"app.css\"></require>\n  <h1>${message}</h1>\n  <button click.delegate=\"sayHello()\"> Speak</button>\n</template>\n"; });
+define('text!app.css', ['module'], function(module) { module.exports = "body {\n  background-color: navajowhite; }\n"; });
 //# sourceMappingURL=app-bundle.js.map

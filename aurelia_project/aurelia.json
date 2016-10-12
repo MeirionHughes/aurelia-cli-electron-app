@@ -115,7 +115,11 @@
           "aurelia-templating-binding",
           {
             "name": "text",
-            "path": "../node_modules/requirejs-text/text"
+            "path": "../node_modules/text/text"
+          },
+          {
+            "name": "electron",
+            "path": "../aurelia_project/electron-fix"
           },
           {
             "name": "aurelia-templating-resources",
