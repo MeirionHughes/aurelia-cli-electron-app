@@ -4,7 +4,7 @@ import environment from './environment';
 export function configure(aurelia: Aurelia) {
   aurelia.use
     .standardConfiguration()
-    .feature('components');
+    .feature('elements');
 
   if (environment.debug) {
     aurelia.use.developmentLogging();

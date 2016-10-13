@@ -1,6 +1,8 @@
 <template>
   <require from="./app.css"></require>
 	<window>
+    <tab-panel pages.bind="pages">
+    </tab-panel>
 		<h1>${message}</h1>
 		<button click.delegate="sayHello()"> Speak</button>
 	</window>
