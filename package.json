@@ -21,6 +21,7 @@
     "aurelia-tools": "^0.2.2",
     "browser-sync": "^2.13.0",
     "connect-history-api-fallback": "^1.2.0",
+    "electron-reload": "^1.0.2",
     "event-stream": "^3.3.3",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-changed-in-place": "^2.0.3",

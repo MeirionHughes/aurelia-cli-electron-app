@@ -1,0 +1,36 @@
+<template>
+	<require from="./window.css"></require>
+
+	<div id="title-bar">
+		<div id="title">${title}</div>
+		<div id="title-bar-btns">
+			<button id="config-btn">
+				<svg class="icon icon-config">
+					<use xlink:href="./resources/symbols.svg#icon-config"></use>
+				</svg>
+			</button>
+			<button id="help-btn">
+				<svg class="icon icon-help">
+					<use xlink:href="./resources/symbols.svg#icon-help"></use>
+				</svg>
+			</button>
+			<button id="min-btn">
+				<svg class="icon icon-minimise">
+					<use xlink:href="./resources/symbols.svg#icon-minimise" />
+				</svg>
+			</button>
+			<button id="max-btn">
+				<svg class="icon icon-maximise">
+					<use xlink:href="./resources/symbols.svg#icon-maximise"></use>
+				</svg>
+			</button>
+			<button id="close-btn">
+				<svg class="icon icon-close">
+					<use xlink:href="./resources/symbols.svg#icon-close"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+	<slot>
+	</slot>
+</template>

@@ -15,19 +15,19 @@
       "./typings/**/*.d.ts",
       "./custom_typings/**/*.d.ts"
     ],
-    "source": "src\\**\\*.ts"
+    "source": "source\\**\\*.ts"
   },
   "markupProcessor": {
     "id": "none",
     "displayName": "None",
     "fileExtension": ".html",
-    "source": "src\\**\\*.html"
+    "source": "source\\**\\*.html"
   },
   "cssProcessor": {
     "id": "sass",
     "displayName": "Sass",
     "fileExtension": ".scss",
-    "source": "src\\**\\*.scss"
+    "source": "source\\**\\*.scss"
   },
   "editor": {
     "id": "vscode",
@@ -39,12 +39,12 @@
     "source": "test\\unit\\**\\*.ts"
   },
   "paths": {
-    "root": "src",
-    "resources": "src\\resources",
-    "elements": "src\\resources\\elements",
-    "attributes": "src\\resources\\attributes",
-    "valueConverters": "src\\resources\\value-converters",
-    "bindingBehaviors": "src\\resources\\binding-behaviors"
+    "root": "source",
+    "resources": "source\\resources",
+    "elements": "source\\elements",
+    "attributes": "source\\attributes",
+    "valueConverters": "source\\value-converters",
+    "bindingBehaviors": "source\\binding-behaviors"
   },
   "testFramework": {
     "id": "jasmine",
@@ -70,7 +70,7 @@
             ".html",
             ".css"
           ],
-          "stub": false
+          "stub": true
         }
       ]
     },
