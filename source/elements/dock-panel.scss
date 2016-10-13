@@ -1,0 +1,51 @@
+dock-panel{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.panel
+{
+  flex: 1;
+  background-color: green;
+
+  display: flex;  
+  flex-flow: row wrap;  
+}
+
+.panel > * {  
+  flex: 1 100%;
+}
+
+.panel-top{ 
+  background: tomato;
+}
+
+.panel-bottom{
+  background: lightgreen;
+}
+
+.panel-body{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.panel-content {
+  flex: 1;
+}
+
+.panel-left, .panel-right {
+  /* 12em is the width of the columns */
+  flex: 0 0 20%;
+}
+
+.panel-left {
+  /* put the nav on the left */
+  order: -1;
+  background-color: lightskyblue;
+}
+
+.panel-right{
+   background-color: hotpink;
+}

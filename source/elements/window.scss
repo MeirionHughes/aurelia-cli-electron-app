@@ -1,19 +1,25 @@
+@import '../styles/colours';
 @import '../styles/icons';
 
 body {
 	padding: 0px;
 	margin: 0px;
 	color: #fff;
-	background-color: #2D2D30;
-	border: 1px solid #68217A;
+	background-color: $panel;
+	border: 1px solid $border;
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-	
 	display: flex;
 	flex-flow: column;	
+}
+
+window{
+  display: flex;
+	flex-flow: column;	
+  flex:1;
 }
 
 #title-bar {
@@ -48,5 +54,13 @@ body {
 }
 
 #title-bar-btns button:hover {
-	background-color: #3F3F41;
+	background-color: $panel-light;
+}
+
+#content
+{
+  background-color: lightsalmon;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }

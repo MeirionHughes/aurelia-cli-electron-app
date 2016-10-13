@@ -1,9 +1,12 @@
 <template>
-  <require from="./app.css"></require>
+	<require from="./app.css"></require>
 	<window>
-    <tab-panel pages.bind="pages">
-    </tab-panel>
-		<h1>${message}</h1>
-		<button click.delegate="sayHello()"> Speak</button>
+		<dock-panel>
+			<div class="text">centre</div>
+			<div class="text" slot="top">top</div>
+			<div class="text" slot="bottom">bottom</div>
+			<div class="text" slot="left">left</div>
+			<div class="text" slot="right">right</div>
+		</dock-panel>
 	</window>
 </template>

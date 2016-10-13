@@ -1,0 +1,27 @@
+<template>
+	<div class="panel">
+		<require from="./dock-panel.css"></require>
+
+		<div class="panel-top">
+			<slot name="top"></slot>
+		</div>
+
+		<div class="panel-body">
+			<div class="panel-content">
+				<slot></slot>
+			</div>
+
+			<div class="panel-left">
+				<slot name="left"></slot>
+			</div>
+
+			<div class="panel-right">
+				<slot name="right"></slot>
+			</div>
+		</div>
+
+		<div class="panel-bottom">
+			<slot name="bottom"></slot>
+		</div>
+	</div>
+</template>
