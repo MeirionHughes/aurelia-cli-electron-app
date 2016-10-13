@@ -5,7 +5,7 @@ export class App {
   
   sayHello() {
     remote.dialog.showMessageBox({
-      message: "The file has been saved! :-)",
+      message: this.message,
       buttons: ["OK"]
     });
   }

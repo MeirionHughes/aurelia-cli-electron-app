@@ -18,7 +18,12 @@ let serve = gulp.series(
     childProcess
       .spawn(electron, ["."], {
         stdio: 'inherit'
-      });
+      })
+      .on("close", () => {
+        // User closed the app. Kill the host process.
+        process.exit();
+      })
+
     done();
   }
 );
