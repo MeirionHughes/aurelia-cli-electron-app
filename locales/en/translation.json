@@ -1,0 +1,14 @@
+{
+	"test": "Test",
+  "errorMessages": {
+		"default": "${$displayName} is invalid.",
+		"required": "${$displayName} is required.",
+		"matches": "${$displayName} is not correctly formatted.",
+		"email": "${$displayName} is not a valid email.",
+		"minLength": "${$displayName} must be at least ${$config.length} character ${$config.length === 1 ? '' : 's'}.",
+		"maxLength": "${$displayName} cannot be longer than ${$config.length} character ${$config.length === 1 ? '' : 's'}.",
+		"minItems": "${$displayName} must contain at least ${$config.count} item ${$config.count === 1 ? '' : 's'}.",
+		"maxItems": "${$displayName} cannot contain more than ${$config.count} item ${$config.count === 1 ? '' : 's'}.",
+		"equals": "${$displayName} must be ${$config.expectedValue}."
+	}
+}
