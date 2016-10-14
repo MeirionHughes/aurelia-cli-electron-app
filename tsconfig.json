@@ -10,13 +10,16 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
-    "lib": ["es2015", "dom"]
+    "lib": ["es2015", "dom"],
+    "allowSyntheticDefaultImports": true
   },
   "exclude": [
     "node_modules"
   ],
   "filesGlob": [
-    "./source/**/*.ts"
+    "./source/**/*.ts",
+    "./typings/**/*.ts",
+    "./vendor_typings/**/*.ts"
   ],
   "atom": {
     "rewriteTsconfig": false

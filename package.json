@@ -11,7 +11,10 @@
     "aurelia-animator-css": "^1.0.0",
     "aurelia-bootstrapper": "^1.0.0",
     "aurelia-fetch-client": "^1.0.0",
-    "electron": "^1.4.3"
+    "aurelia-i18n": "^1.1.2",
+    "aurelia-validation": "^0.13.1",
+    "electron": "^1.4.3",
+    "i18next-xhr-backend": "^1.2.0"
   },
   "peerDependencies": {},
   "devDependencies": {
@@ -50,6 +53,7 @@
     "vinyl-fs": "^2.4.3"
   },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "postinstall": "typings install"
   }
 }
