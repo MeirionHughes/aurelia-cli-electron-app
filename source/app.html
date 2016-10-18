@@ -1,12 +1,7 @@
 <template>
 	<require from="./app.css"></require>
 	<window>
-		<dock-panel>
-			<div class="text">centre</div>
-			<div class="text" slot="top" click.delegate="sayHello()">top</div>
-			<div class="text" slot="bottom" click.delegate="sayHello()">bottom</div>
-			<div class="text" slot="left" click.delegate="sayHello()">left</div>
-			<div class="text" slot="right" click.delegate="sayHello()">right</div>
-		</dock-panel>
+		<tab-control items.bind="pages">
+		</tab-control>
 	</window>
 </template>

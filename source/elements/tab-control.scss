@@ -1,0 +1,60 @@
+@import '../styles/colours';
+
+tab-control {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  background-color: $panel-darker;
+}
+
+.tab-control-header {
+  height: 2em;
+  display: flex;
+  flex-flow: row;
+  background-color: $panel-dark;
+}
+
+.tab-control-container {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  background-color: $panel-darker;
+}
+
+.tab-item-header {
+  display: flex;
+  flex-flow: row;
+
+  width: 120px;
+
+  color: white;
+  background-color: $panel;
+  
+  border-width: 1px;
+  border-color: transparent;
+  border-style: solid;
+  outline: none;
+
+  transition: background 0.1s ease-out;
+
+  header {
+    flex: 1;
+    text-align: left;
+  }
+
+  svg {
+    color: transparent;
+    transition: color .5s ease-out;
+  }
+
+  &.selected {
+    background-color: $panel-darker;    
+  }
+  
+  &:hover {
+    svg {
+      color: white;
+      transition: color .05s ease-in;
+    }
+  }
+}

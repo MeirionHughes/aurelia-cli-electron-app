@@ -1,0 +1,17 @@
+<template>
+	<require from="./tab-control.css"></require>
+
+	<header class="tab-control-header">
+		<button class="tab-item-header ${$index == selectedIndex?'selected':''}" repeat.for="item of items" click.trigger="selectedIndex = $index">
+			<header>${item.title}</header>
+			<svg class="icon">
+				<use xlink:href="./resources/symbols.svg#icon-close" />
+			</svg>
+		</button>
+	</header>
+
+	<section class="tab-control-container">
+		<compose if.bind="items.length > 0 " view-model="../${items[selectedIndex].viewModel}" model.bind="items[selectedIndex].model" >     
+		</compose>
+	</section>
+</template>
