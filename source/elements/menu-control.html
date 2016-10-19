@@ -1,0 +1,13 @@
+<template>
+	<require from="./menu-control.css"></require>
+	<div class=menuContainer>
+		<div class="dropdown" repeat.for="item of items">
+			<button class="dropbtn" click.delegate="item.execute()">${item.title}</button>
+			<div class="dropdown-content">
+				<a click.delegate="subitem.execute()" repeat.for="subitem of item.items" class.bind="subitem.type">
+          ${subitem.title}
+        </a>
+			</div>
+		</div>
+	</div>
+</template>

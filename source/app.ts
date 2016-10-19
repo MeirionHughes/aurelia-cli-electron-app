@@ -20,12 +20,53 @@ export class App {
       model: "world"
     }
   ]
+  public menu = [
+    {
+      title: "File",
+      items: [
+        {
+          title: "Open",
+          execute: this.open
+        },
+        {
+          type: "seperator"
+        },
+        {
+          title: "Exit",
+          execute: () => {
+
+            window.alert("Clicked Exit")
+          }
+        }
+      ]
+    },
+    {
+      title: "Edit",
+      items: [
+        {
+          title: "Cut"
+        },
+        {
+          title: "Copy"
+        },
+        {
+          title: "Paste"
+        }
+      ]
+    },
+    {
+      title: "About",
+      execute: () => {
+        window.alert("Mooo!");
+      }
+    }
+  ]
 
   constructor(i18n: I18N) {
     this.i18n = i18n;
   }
 
-  sayHello() {
+  open() {
     remote.dialog.showMessageBox({
       message: this.i18n.tr("test"),
       buttons: ["OK"]
