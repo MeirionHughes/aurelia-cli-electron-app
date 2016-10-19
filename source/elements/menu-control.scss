@@ -71,3 +71,9 @@ menu-control{
 .dropdown:hover .dropbtn {
   background-color: #535357;
 }
+
+@media print {
+  menu-control {
+    display: none;
+  }
+}

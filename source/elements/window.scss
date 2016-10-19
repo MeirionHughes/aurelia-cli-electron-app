@@ -65,3 +65,12 @@ window .content * {
   flex-direction: column;
   flex: 1;
 }
+
+@media print {
+  body {
+    border: none;
+  }
+  #title-bar {
+    display: none;
+  }
+}

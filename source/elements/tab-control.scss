@@ -58,3 +58,13 @@ tab-control {
     }
   }
 }
+
+@media print {
+  .tab-control-header  {
+    display: none;
+  }
+  .tab-control-container{
+    background-color: white;
+    color:black;
+  }
+}

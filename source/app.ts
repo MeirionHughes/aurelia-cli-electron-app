@@ -32,6 +32,15 @@ export class App {
           type: "seperator"
         },
         {
+          title: "Print",
+          execute: () => {
+            window.print();
+          }
+        },
+        {
+          type: "seperator"
+        },
+        {
           title: "Exit",
           execute: () => {
 
