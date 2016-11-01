@@ -56,6 +56,6 @@
   },
   "scripts": {
     "start": "electron .",
-    "postinstall": "typings install"
+    "build" : "au build"
   }
 }
