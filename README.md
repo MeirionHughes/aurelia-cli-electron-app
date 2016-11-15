@@ -4,21 +4,31 @@ requires:
   * nodejs 6
   * `npm install aurelia-cli -g`
 
-run:
-```
+**install and run:**
+
+```shell
 npm install
 au run
 ```
 
-test:
+**debug (vscode):**
 
-[The unit test require the app to be build](https://github.com/aurelia/cli/issues/370)
+```shell
+au build
 ```
+
+then press f5. 
+
+**test:**
+
+[The unit test requires the app to be built](https://github.com/aurelia/cli/issues/370)
+
+```shell
 au build
 ```
 
 Once the app is build, you may execute:
 
-```
+```shell
 au test --watch
 ```
