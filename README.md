@@ -12,12 +12,9 @@ au run
 ```
 
 **debug (vscode):**
-
-```shell
-au build
-```
-
-then press f5. 
+* build 
+* add breakpoints
+* press f5. 
 
 **test:**
 
