@@ -19,7 +19,7 @@
   "filesGlob": [
     "./source/**/*.ts",
     "./typings/**/*.ts",
-    "./vendor_typings/**/*.ts"
+    "./spec/**/*.ts"
   ],
   "atom": {
     "rewriteTsconfig": false
