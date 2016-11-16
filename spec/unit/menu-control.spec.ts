@@ -1,6 +1,5 @@
 import {StageComponent} from 'aurelia-testing';
 import {bootstrap} from 'aurelia-bootstrapper';
-import {App} from '../../src/app';
 
 describe('MenuControl', () => {
   let component;
