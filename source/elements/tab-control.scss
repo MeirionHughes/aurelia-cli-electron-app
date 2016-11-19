@@ -14,11 +14,17 @@ tab-control {
   background-color: $panel-dark;
 }
 
-.tab-control-container {
+.tab-control-container{
   display: flex;
   flex-flow: column;
   flex: 1;
   background-color: $panel-darker;
+}
+
+.tab-control-container * {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
 }
 
 .tab-item-header {
