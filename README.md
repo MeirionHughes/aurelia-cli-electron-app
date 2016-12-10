@@ -10,9 +10,10 @@ requires:
 npm install
 au run
 ```
-
+**build (vscode)**
+* press Ctrl+Shift+B
+* or select a task from the task menu (normal or watch)
 **debug (vscode):**
-* build 
 * add breakpoints
 * press f5. 
 
@@ -29,3 +30,6 @@ Once the app is build, you may execute:
 ```shell
 au test --watch
 ```
+**test (vscode)**
+* press Ctrl+Shift+B
+* then select a test from the task menu (normal or watch)
