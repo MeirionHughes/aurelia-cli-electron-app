@@ -35,7 +35,7 @@ function buildTypeScript() {
   return eventStream.merge(dts, src)
     .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
     .pipe(sourcemaps.init())
-    .pipe(ts(typescriptCompiler))
+    .pipe(typescriptCompiler())
     .pipe(build.bundle());
 }
 
