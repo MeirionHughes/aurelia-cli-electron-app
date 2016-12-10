@@ -5,8 +5,12 @@
       "name": "Debug",
       "type": "chrome",
       "request": "launch",
-      "port": 9222,      
-      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
+      "windows": {
+        "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
+      },
+      "preLaunchTask": "build",
+      "port": 9222,
       "runtimeArgs": [
         "${workspaceRoot}",
         "--enable-logging",
