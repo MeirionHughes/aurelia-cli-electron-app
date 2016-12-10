@@ -12,7 +12,7 @@ au run
 ```
 **build (vscode)**
 * press Ctrl+Shift+B
-* or select a task from the task menu (normal or watch)
+* or select a task from the task menu
 **debug (vscode):**
 * add breakpoints
 * press f5. 
@@ -32,4 +32,4 @@ au test --watch
 ```
 **test (vscode)**
 * press Ctrl+Shift+B
-* then select a test from the task menu (normal or watch)
+* then select a test from the task menu
