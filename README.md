@@ -22,7 +22,7 @@ au run
 [The unit test requires the app to be built](https://github.com/aurelia/cli/issues/370)
 
 ```shell
-au build
+au build --watch
 ```
 
 Once the app is build, you may execute:
