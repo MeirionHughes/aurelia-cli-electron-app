@@ -26,7 +26,9 @@ export class App {
       items: [
         {
           title: "Open",
-          execute: this.open
+          execute: () => {
+            this.open();
+          }
         },
         {
           type: "seperator"
