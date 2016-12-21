@@ -1,0 +1,4 @@
+{
+  "name": "watch",
+  "description": "Watches source files for changes and rebuilds automatically."
+}

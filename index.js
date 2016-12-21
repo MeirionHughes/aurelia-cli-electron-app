@@ -1,7 +1,8 @@
 const electron = require('electron');
 const BrowserWindow = electron.BrowserWindow;
+const path = require('path');
 
-require('electron-reload')(__dirname);
+require('electron-reload')(path.join(__dirname, "output"));
 
 const app = electron.app
 
