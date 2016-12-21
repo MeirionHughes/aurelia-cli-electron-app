@@ -8,21 +8,20 @@ requires:
 
 ```shell
 npm install
-au run
+au run --watch
 ```
-**build (vscode)**
-* press Ctrl+Shift+B
-* or select a task from the task menu
-**debug (vscode):**
-* add breakpoints
-* press f5. 
+
+**vscode:**
+* add breakpoints (optional)
+* press f5 to run
+* open terminal, execute: `au watch` (optional)
 
 **test:**
 
 [The unit test requires the app to be built](https://github.com/aurelia/cli/issues/370)
 
 ```shell
-au build --watch
+au build
 ```
 
 Once the app is build, you may execute:
