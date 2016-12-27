@@ -4,7 +4,11 @@
   "version": "0.1.0",
   "command": "au",
   "isShellCommand": true,
+  "showOutput": "always",
   "tasks": [
+    {
+      "taskName": "run"
+    },
     {
       "taskName": "build",
       "isBuildCommand": true
@@ -12,7 +16,35 @@
     {
       "taskName": "test",
       "isTestCommand": true
+    },
+    {
+      "taskName": "run:watch",
+      "isWatching": true,
+      "args": [
+        "run",
+        "--watch"
+      ],
+      "suppressTaskName": true
+    },
+    {
+      "taskName": "build:watch",
+      "isWatching": true,
+      "isBuildCommand": true,
+      "args": [
+        "build",
+        "--watch"
+      ],
+      "suppressTaskName": true
+    },
+    {
+      "taskName": "test:watch",
+      "isWatching": true,
+      "isTestCommand": true,
+      "args": [
+        "test",
+        "--watch"
+      ],
+      "suppressTaskName": true
     }
-  ],
-  "showOutput": "always"
+  ]
 }
