@@ -9,22 +9,22 @@
 					<use xlink:href="./resources/symbols.svg#icon-config"></use>
 				</svg>
 			</button>
-			<button id="help-btn">
+			<button id="help-btn" click.delegate="showHelp()">
 				<svg class="icon icon-help">
 					<use xlink:href="./resources/symbols.svg#icon-help"></use>
 				</svg>
 			</button>
-			<button id="min-btn">
+			<button id="min-btn" click.delegate="minimizeWindow()">
 				<svg class="icon icon-minimise">
 					<use xlink:href="./resources/symbols.svg#icon-minimise" />
 				</svg>
 			</button>
-			<button id="max-btn">
+			<button id="max-btn" click.delegate="maximizeWindow()">
 				<svg class="icon icon-maximise">
 					<use xlink:href="./resources/symbols.svg#icon-maximise"></use>
 				</svg>
 			</button>
-			<button id="close-btn">
+			<button id="close-btn" click.delegate="tryCloseWindow()">
 				<svg class="icon icon-close">
 					<use xlink:href="./resources/symbols.svg#icon-close"></use>
 				</svg>
