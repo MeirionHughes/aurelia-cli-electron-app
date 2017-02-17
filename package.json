@@ -1,21 +1,40 @@
 {
   "name": "aurelia-cli-electron-app",
   "description": "An Aurelia client application.",
+  "author": {
+    "name": "You",
+    "email": "you@example.com",
+    "url": "https://example.com/"
+  },
   "version": "0.1.0",
   "repository": {
-    "type": "???",
-    "url": "???"
+    "type": "git",
+    "url": "https://github.com/MeirionHughes/aurelia-cli-electron-app.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "aurelia-animator-css": "^1.0.0",
-    "aurelia-bootstrapper": "^1.0.0",
-    "aurelia-fetch-client": "^1.0.0",
-    "aurelia-i18n": "^1.1.2",
-    "aurelia-validation": "^0.13.1",
-    "electron": "^1.4.3",
-    "i18next-xhr-backend": "^1.2.0",
-    "requirejs": "~2.3.2"
+  "build": {
+    "appId": "com.example.aureliaapp",
+    "productName": "Example",
+    "files": [
+      "node_modules/**/*",
+      "locales/**/*",
+      "output/**/*",
+      "resources/**/*",
+      "index.html",
+      "index.js",
+      "package.json"
+    ],
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true
+    },
+    "linux": {
+      "target": [
+        "deb"
+      ]
+    }
   },
   "peerDependencies": {},
   "devDependencies": {
@@ -23,12 +42,18 @@
     "@types/i18next": "^2.3.32",
     "@types/i18next-xhr-backend": "^1.2.2",
     "@types/jasmine": "^2.5.38",
+    "aurelia-animator-css": "^1.0.1",
+    "aurelia-bootstrapper": "^2.0.1",
     "aurelia-cli": "^0.21.0",
+    "aurelia-fetch-client": "^1.1.0",
+    "aurelia-i18n": "^1.3.0",
     "aurelia-testing": "^1.0.0-beta.2.0.0",
     "aurelia-tools": "^0.2.2",
+    "aurelia-validation": "^1.0.0-beta.1.0.1",
     "browser-sync": "^2.13.0",
     "connect-history-api-fallback": "^1.2.0",
-    "electron": "^1.4.3",
+    "electron": "^1.4.15",
+    "electron-builder": "^13.9.0",
     "electron-reload": "^1.0.2",
     "event-stream": "^3.3.3",
     "gulp": "github:gulpjs/gulp#4.0",
@@ -41,6 +66,7 @@
     "gulp-sourcemaps": "^2.0.0-alpha",
     "gulp-tslint": "^6.1.3",
     "gulp-typescript": "^3.1.2",
+    "i18next-xhr-backend": "^1.3.0",
     "jasmine-core": "^2.4.1",
     "karma": "^1.3.0",
     "karma-chrome-launcher": "^2.0.0",
@@ -48,6 +74,7 @@
     "karma-typescript-preprocessor": "^0.3.0",
     "minimatch": "^3.0.2",
     "require-dir": "^0.3.1",
+    "requirejs": "^2.3.2",
     "spectron": "^3.4.0",
     "text": "github:requirejs/text",
     "through2": "^2.0.1",
@@ -59,6 +86,7 @@
   },
   "scripts": {
     "start": "electron .",
-    "build": "au build"
+    "build": "au build",
+    "dist": "au build --env prod && build"
   }
 }

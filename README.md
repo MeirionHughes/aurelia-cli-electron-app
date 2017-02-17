@@ -32,3 +32,11 @@ au test --watch
 **test (vscode)**
 * press Ctrl+Shift+B
 * then select a test from the task menu
+
+**building a distributable**
+
+[This example makes usage of electron-builder to build installers, see their amazing documentation for details](https://github.com/electron-userland/electron-builder)
+
+```shell
+npm run dist
+```
