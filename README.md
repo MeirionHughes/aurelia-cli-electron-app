@@ -40,3 +40,8 @@ au test --watch
 ```shell
 npm run dist
 ```
+
+# Webpack 
+
+I've started working on getting a similar setup for aurelia and webpack here: https://github.com/MeirionHughes/aurelia-webpack-electron
+
