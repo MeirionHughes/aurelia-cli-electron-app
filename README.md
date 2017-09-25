@@ -1,5 +1,7 @@
 # aurelia-cli-electron-app
 
+:warning: **no longer maintained_**
+
 requires:
   * nodejs 6
   * `npm install aurelia-cli -g`
